@@ -1,0 +1,57 @@
+/*
+Colors used:
+Background Color: #FCFCFC;
+Text Color: #1F1826;
+Footnote Background: #F2F2F2
+*/
+
+body {
+  background-color: #fcfcfc;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #1F1826;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #994c30;
+}
