@@ -2,7 +2,7 @@
 Colors used:
 Background Color: #FCFCFC;
 Text Color: #1F1826;
-Footnote Background: #F2F2F2
+Footer Background: #F2F2F2
 */
 
 body {
@@ -36,22 +36,56 @@ h4 {
   font-weight: 400;
 }
 
+footer {
+  background-color: #f2f2f2;
+}
+
 img {
   width: 100%;
 }
 
 a {
-  color: #ff7f50;
+  color: #1F1826;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #ff7f50;
+  color: #1F1826;
 }
 a:hover,
 a:focus {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: rgba(31,24,38,0.7);
+  text-decoration: none;
 }
 a:active { /* selected link */
-  color: #994c30;
+  color: rgba(31,24,38,0.3);
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  color: #1F1826;
+  font-weight: 600;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1.5px solid #1F1826;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.button:active {
+  color: rgba(31,24,38,0.3);
+}
+.button.contact {
+  color: #1F1826;
+  text-transform: uppercase;
+  border: none;
+}
+.button.contact:hover {
+  opacity: 0.7;
+}
+.button.contact:active {
+  color: rgba(31,24,38,0.3);
 }
