@@ -86,14 +86,6 @@ a:active { /* selected link */
   color: rgba(31,24,38,0.3);
 }
 
-header {
-  background-color: #f5f7a8;
-  padding: 10px;
-  margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
-  position: fixed;
-}
-
 footer {
   background-color: #f2f2f2;
 }
