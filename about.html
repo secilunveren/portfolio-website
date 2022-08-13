@@ -29,19 +29,21 @@
   <!-- For the about section -->
   <main>
     <div id="hero">
-      <div class="container">
+      <div style="text-align:left;" class="container">
         <h1>About</h1>
       </div>
     </div>
 
-    <div>
+    <div id="about-page">
       <div class="container">
-        <picture>
-          <source srcset="img\me\Secil@1x.png" media="(max-width:767px)">
-          <img src="img\me\Secil@2x.png" alt="Secil's Image">
-        </picture>
         <div>
-          <div>
+          <div class="col-md-3">
+            <picture>
+              <source srcset="img\me\Secil@1x.png" media="(max-width:767px)">
+              <img src="img\me\Secil@2x.png" alt="Secil's Image">
+            </picture>
+          </div>
+          <div class="col-md-9">
             <h2>My Story</h2>
             <p>The plan was to work as a meteorological engineer after the university.
               But, if you are someone like me who likes questioning life then probably
@@ -63,32 +65,34 @@
               ignoring my core values for a job.</p>
             <p>When I'm not designing, I enjoy being on the beach, baking cakes,
               traveling, doing pilates, and experiencing new adventures.</p>
-            <a href="files/cv.pdf" target="_blank" class="button">View My Resume</a>
           </div>
+        </div>
+        <div style="text-align:center;"><a href="files/cv.pdf" target="_blank" class="button">View My Resume</a></div>
+        <div>
+          <h2>Relevant Skills & Tools</h2>
+          <div class="col-md-6">
+            <h3>Skillsets</h3>
+            <p>A well-rounded set of UI design skills:</p>
+            <ul>
+              <li>Design principles</li>
+              <li>Wireframing and prototyping</li>
+              <li>Mobile app design</li>
+              <li>Responsive web design</li>
+              <li>Interaction design and animation</li>
+              <li>Creating style guides</li>
+              <li>Building a cohesive brand</li>
+            </ul>
 
+            <p>A set of UX design skills:</p>
+            <ul>
+              <li>UX fundamentals</li>
+              <li>User psychology</li>
+              <li>User research</li>
+              <li>User testing</li>
+            </ul>
+          </div>
           <div>
-            <h2>Relevant Skills & Tools</h2>
-            <div>
-              <h3>Skillsets</h3>
-              <p>A well-rounded set of UI design skills:</p>
-              <ul>
-                <li>Design principles</li>
-                <li>Wireframing and prototyping</li>
-                <li>Mobile app design</li>
-                <li>Responsive web design</li>
-                <li>Interaction design and animation</li>
-                <li>Creating style guides</li>
-                <li>Building a cohesive brand</li>
-              </ul>
-
-              <p>A set of UX design skills:</p>
-              <ul>
-                <li>UX fundamentals</li>
-                <li>User psychology</li>
-                <li>User research</li>
-                <li>User testing</li>
-              </ul>
-
+            <div class="col-md-6">
               <h3>Soft Skills</h3>
               <ul>
                 <li>Empathetic approach</li>
@@ -100,7 +104,7 @@
                 <li>Good listening and observation skills</li>
               </ul>
             </div>
-            <div>
+            <div class="col-md-6">
               <h3>Tools I Use</h3>
               <ul>
                 <li>Figma</li>
@@ -170,13 +174,14 @@
                   </g>
                 </g>
               </svg>
-              </a>
+            </a>
           </li>
         </ul>
       </div>
-      <br><br><p>Copyright Seçil Ünveren 2022</p>
+      <br><br>
+      <p>Copyright Seçil Ünveren 2022</p>
     </div>
   </footer>
-  </body>
+</body>
 
-  </html>
+</html>

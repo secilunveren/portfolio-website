@@ -45,7 +45,7 @@ img {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 170px;
 }
 
 .logo:hover,
@@ -101,6 +101,7 @@ a:active { /* selected link */
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #15101a; }
 
+#about-page h2,
 #hero {
   text-align: center;
 }
@@ -162,4 +163,52 @@ footer ul li {
 
 footer ul li a {
    margin: 5px;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav {
+    width: auto;
+    float: right;
+  }
+.logo {padding: 15px 0;}
+body {
+    font-size: 18px;
+  }
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#about-page h3 { margin-top: 0;}
+}
+
+@media only screen and (min-width: 1024px) {
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
