@@ -37,7 +37,7 @@ h3 {
 }
 h4 {
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 img {
@@ -46,6 +46,7 @@ img {
 
 .logo {
   max-width: 170px;
+  transition: 0.2s opacity;
 }
 
 .logo:hover,
@@ -56,14 +57,43 @@ img {
   opacity: 0.6;
 }
 
+.berlin-illustration {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 a {
   color: #15101a;
   text-decoration: none; /* No underlining */
+  transition: 0.2s opacity;
 }
 
 a:hover,
 a:focus {
-  color: rgba(21,16,26,0.8);
+  opacity: 0.8;
   text-decoration: none;
 }
 a:active { /* selected link */
