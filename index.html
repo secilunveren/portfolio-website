@@ -8,22 +8,26 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/b28db0bdfc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- For the header -->
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <img src="img\logo.svg" alt="Website Logo" class="logo">
       </a>
       <nav>
         <ul class="navigation">
-          <li><a href="#work">Work</a></li>
+          <li><a href="#work" onclick="menuToggle()">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
@@ -31,7 +35,7 @@
   <main>
     <div id="hero">
       <div class="container">
-        <br><h1>Hi, I'm Seçil.</h1>
+        <h1>Hi, I'm Seçil.</h1>
         <p>As a UI/UX designer turning something soulless into a state of touching our emotions is fascinating.</p>
       </div>
     </div>
@@ -39,7 +43,7 @@
     <!-- For the work/projects -->
     <div id="work">
       <div class="container">
-        <br><br><br><h2>My Work</h2>
+        <h2>My Work</h2>
         <div class="row">
           <div class="column col-md-6 col-lg-7">
             <picture>

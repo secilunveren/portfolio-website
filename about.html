@@ -7,21 +7,25 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/b28db0bdfc.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- For the header -->
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
         <img src="img\logo.svg" alt="Website Logo" class="logo">
       </a>
       <nav>
         <ul class="navigation">
-          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#work" onclick="menuToggle()">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
   <!-- For the about section -->
@@ -31,10 +35,7 @@
         <div>
           <h2>My Story</h2>
           <div class="square">
-            <picture>
-              <source srcset="img\me\Secil@1x.png" media="(max-width:767px)">
               <img src="img\me\Secil@2x.png" alt="Secil's Image">
-            </picture>
           </div>
           <p>The plan was to work as a meteorological engineer after the university.
             But, if you are someone like me who likes questioning life then probably
