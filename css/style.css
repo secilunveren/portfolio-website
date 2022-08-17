@@ -64,57 +64,6 @@ img {
   opacity: 0.6;
 }
 
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 a {
   color: #15101a;
@@ -164,9 +113,12 @@ a:active {
 .row {
   margin: 25px 0;
 }
-
+#project,
 #hero {
   text-align: center;
+}
+#here {
+  text-decoration: underline;
 }
 
 header {
@@ -227,7 +179,7 @@ main {
 footer {
   background-color: #f2f2f2;
   margin: 30px 0 0 0;
-  padding: 15px 0 1px 0;
+  padding: 15px 0 3px 0;
   text-align: center;
 }
 
