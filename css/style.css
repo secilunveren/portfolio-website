@@ -140,6 +140,7 @@ nav>ul {
 nav>ul>li>a {
   padding: 0 15px;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .navtoggle li:not(:last-child) {
