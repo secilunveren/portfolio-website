@@ -225,6 +225,10 @@ footer ul li a {
     display: inline-block;
   }
 
+  nav>ul>li>a {
+    font-size: 22px;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
