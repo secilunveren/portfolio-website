@@ -7,7 +7,6 @@ function menuToggle() {
     x.className = 'navtoggle';
   }
 
-
         var icon=document.getElementsByClassName("fa-bars")[0];
     if(icon){
        icon.className = icon.className.replace("fa-bars", "fa-xmark");
